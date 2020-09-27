@@ -1,0 +1,7 @@
+enter the 0element 
+enter the 1element 
+enter the 2element 
+enter the 3element 
+enter the 4element 
+enter the 5element 
+10 20 30 40 50 60 enter x and y :
