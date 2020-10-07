@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my title </title>
+        <script type="text/javascript">
+        
+            function buttonClick()
+            {
+                document.getElementById("heading2").innerHTML = "i AM a BOY ";
+                alert(" button clicked");
+            }
+            function buttonClick1()
+            {
+                 var str = document.getElementById("heading1").innerHTML;
+                 alert(str);
+            }
+
+        </script>
+    </head>
+    <body>
+           <button onclick="buttonClick() ">Click me</button>
+           <button onclick="buttonClick1() ">Submit</button>
+           <h2 id="heading2">  Some Random Text </h2>     
+           <h1 id="heading1">  Some Random Text </h1>  
+    </body>
+</html>

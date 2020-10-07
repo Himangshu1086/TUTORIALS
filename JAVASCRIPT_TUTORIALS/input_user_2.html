@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my title </title>
+        <script  type="text/javascript">
+
+            function fun1()
+            {
+                var username = document.getElementById("text1").value;
+                var password = document.getElementById("text2").value;
+
+                if(password == "himangshu" && username=="HImJD")
+                {
+                    alert("User is Authenticated ");
+                }
+                else{
+                    alert("Username and password not match ");
+                }
+            }
+
+        </script>
+        <style>
+
+            #btn1, #text1, #text2{
+                    color:black;
+                    font-size: 25px;
+                    border: 5px solid;
+                    border-color: blue;
+                    background-color: aqua;
+                    border-radius: 30px;
+                    padding: 10px;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-left: 30%;
+                    }
+
+        </style>
+
+    </head>
+    <body>
+        <div style="border: 10px solid black ; left :200px;  ">
+                <input  id="text1" type="text" placeholder="username">
+                <br><br>
+                <input  id="text2" type="password" placeholder="password">
+                <br><br>
+                <button id="btn1" onclick="fun1()" >Click me</button>
+            </div>
+    </body>
+</html>

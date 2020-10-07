@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my title </title>
+        <script  type="text/javascript">
+        
+        // OBJECT
+
+            var Cars = {
+
+                car_brand : "tesla",
+                car_model :" Model 3",
+                price : 3500,
+                
+                teslaAutoPilot : function()  // method
+                {
+                     return document.write("<h1>this car has a auto pilot features</hg>");
+                }
+            
+            }
+            Cars.teslaAutoPilot();
+            
+
+        //=================================================================
+            //******** CONSTRUCTOR FUNCTION *****************//
+
+
+        function Car(car_brand , car_model , price)
+        {
+            this.car_brand = car_brand;
+            this.car_model = car_model;
+            this.price = price;
+            this.teslaAutoPilot = function ()
+            {
+                document.write("<h1>This car has  auto driving features</h1>");
+            }
+        }
+
+        //**************** END OF CONSTRUCTOR CLASS ****************//
+
+        var car1 = new Car("Tesla ", " Model 12", 35000);     // declaration of objects
+        var car2 = new Car("Farrari ", "model 324" , 46877);  // declaration of objects
+
+        car1.teslaAutoPilot();      // accessing the method from the class
+        document.write("<h1>"  + car1.car_brand +"--" + " " + car1.car_model+"--"+ " " + car1.price + "</h1>");
+
+
+        </script>
+    </head>
+    <body>
+                
+    </body>
+</html>

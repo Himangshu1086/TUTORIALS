@@ -1,28 +1,63 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-//#ifndef ONLINE_JUDGE
-//	freopen("input.txt", "r", stdin);
-//	freopen("output.txt", "w", stdout);
-//#endif
+class Node{
+	public :
+		int data;
+		Node *link;
+};
+Node create_node(){
 
+	Node* create_node = new Node;
+	create_node->link=NULL;
+	return *create_node;
+}
 
-	vector<int>v(6);
-	for (int i = 0; i < 6; i++)
-	{
-		cout << "enter the " << i << "element " << endl;
-		cin >> v[i];
+void push_back(int data , Node *head){
+
+	Node *n , *temp;
+	*n = create_node();
+	n->data= data;
+
+	if(head == NULL){
+
+		head = n;
+		temp = n;
 	}
-	for (int i = 0 ; i < 6; i++)
+	else
 	{
-		cout << v[i] << " ";
+		temp->link = n;
+		temp = n;
+		
+		
+	}
+}
+
+void print_list(Node *temp,Node *head ){
+
+	temp= head;
+	while(temp!=NULL)
+	{
+	cout << temp->data <<" ";
+	temp=temp->link;
 	}
 
+}
 
-	int x, y;
-	cout << "enter x and y :" << endl;
-	cin >> x >> y;
+
+
+int main(){
+
+Node *head , *temp;
+head=NULL;
+temp =NULL;
+
+create_node();
+push_back(4 , head);
+print_list(temp , head);
+
+
+
+
 
 }
