@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation
+    </title>
+
+<script>
+       function validate(){
+           var name = document.getElementById("uname");
+           var passw = document.getElementById("pass");
+
+
+           if(name.value.trim()=="" || passw.value.trim()=="")
+  
+             // the trim() function will not allow to enter space.
+
+
+              {
+                  alert("blanked value is not allowed "); 
+                  return false;
+              }
+
+            else
+            {
+                true;
+            }
+       }   
+
+</script>
+
+</head>
+<body>
+      <form onsubmit="return validate()"  action="welcom.html">  <!--the return value would be either true or false
+                                                                     if it is true the validation method will execute else 
+                                                                    onsubmit will be disable-->
+          <input id="uname" type="text"  required placeholder="UserName">
+          <br><br>
+          <input id="pass" type="password"  required  placeholder="Password">
+          <br><br>
+          <input type="submit" name="" id="">
+
+      </form>
+
+
+
+</body>
+</html>

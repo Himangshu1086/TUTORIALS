@@ -1,0 +1,32 @@
+<!--
+    onmouseover and onmouseout 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change image with onmouseout & onmouseover </title>
+
+    <script type="text/javascript">
+        
+
+    function setName()
+    {
+       document.getElementById("img1").src="image/clu-soh-oga9Xg0KVnU-unsplash.jpg";
+    }
+    
+    function setTitle()
+    {
+        document.getElementById("img1").src="image/tim-trad-RC3p9XWxzv4-unsplash.jpg";
+    }
+    
+
+
+    </script>
+</head>
+<body>
+    <img id ="img1" onmouseover="setName() " onmouseout="setTitle()" src="image/clu-soh-oga9Xg0KVnU-unsplash.jpg" alt="photo" width= "200">
+</body>
+</html>
