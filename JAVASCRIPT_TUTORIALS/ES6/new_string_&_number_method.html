@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        let theString = ' Hello ,  my name is Brad and I love food';
+
+        // startsWith();  output true or false if the parameter give same as the starting string.
+        //endWith();      output true or false if end is same
+        //includes();     out
+
+        document.write(theString.startsWith('Hello'));
+        document.write(theString.startsWith('ello'));
+        document.write(theString.endsWith('food'));
+        document.write(theString.endsWith('ood'));
+        document.write(theString.includes('Love'));
+        document.write(theString.includes('Hello'));
+
+
+        //hex
+        document.write(0xFF);
+
+        //binary
+        document.write(0b101011);
+
+        //octal
+        document.write(0o543);
+
+        //isFinite();   it is used to check the number is finite or not and return true or false.
+        document.write(Number.isFinite(-3));
+        document.write(Number.isFinite("nAn"));
+        document.write(Number.isFinite(Infinity));
+
+        // isInteger();  it is used to check wether input is integer or not. 
+        
+        document.write(Number.isInteger(Infinity));
+
+    </script>
+
+</body>
+</html>

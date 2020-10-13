@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+
+
+
+<script type="text/javascript">
+
+    /* document.querySelector() is going to give us the 
+        ability to look through an HTML page
+        and extract an element out of that page so 
+        that we can manipulate that HTML
+    */
+
+    /*
+        === is javascript way of checking for strict equality , make 
+        sure the two values are equal and also their types are the same thing
+    */
+
+    let hello = () => {
+       if(document.querySelector('h1').innerHTML ==='Hello')
+            document.querySelector('h1').innerHTML = 'GOODBYE';    
+        else
+            document.querySelector('h1').innerHTML = 'Hello';
+
+    } 
+
+
+    // innerHTML is to modify the text inside that 
+    // html tag 
+
+    // in order to update a property of anything 
+    // in javascript we use the dot operator
+
+
+
+</script>
+
+
+</head>
+<body>
+ 
+  <h1>Hello </h1>
+  <button onclick="hello()">Click Here</button>  
+
+
+
+</body>
+</html>

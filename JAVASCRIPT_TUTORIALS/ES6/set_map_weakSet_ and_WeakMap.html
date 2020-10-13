@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set ,map , weakmap,weakset></map></title>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+let myArray = [10 , 11 , 12 , 13 , 14 , 15];
+let mySet = new Set(myArray);
+
+mySet.add(100);   // set(7) => {11,12,13,14,15,100}
+
+mySet.add({a: 1 , b: 2});   // this will create a object into the set => object : value {a:1 ,b:2}
+
+mySet.delete(12);  // delete the element value 12
+//mySet.clear();  // clear the whole set
+
+console.log(mySet);
+
+console.log(mySet.size);
+
+mySet.forEach(function(val){
+
+    console.log(val);
+
+});
+
+//====================================================
+            //map
+
+let myMap = new Map([ ['a1' , 'Hello'] , [ 'b1' , 'dear']]);
+
+myMap.set('c1' , 'how are you'); // insert c1
+
+console.log(myMap);
+
+
+//=================================================================
+
+                        // weakSet
+
+
+let carWeakSet = new WeakSet();
+
+let car1 =  {
+    
+    make : 'Toyota' ,
+    model : 'Civic'
+}
+
+let car2 = {
+
+    make : 'Toyota', 
+    model : 'Camry'
+}
+
+carWeakSet.add(car1);
+carWeakSet.add(car2);
+
+//carWeakSet.delete(car1);
+
+console.log(carWeakSet);
+
+
+
+//=================================================
+
+                    // weakMap
+
+let carWeakMap = new WeakMap();
+
+let key1 = {
+    id : 1
+}
+let car3 =  {
+    
+    make : 'Toyota' ,
+    model : 'Civic'
+}
+
+
+carWeakMap.set(key1 , car3);
+
+
+let key2 = {
+    id :2
+}
+let car4 = {
+
+make : 'Toyota', 
+model : 'Camry'
+}
+
+carWeakMap.set(key2 , car4);
+
+
+
+console.log(carWeakMap);
+
+</script>
+
+</body>
+</html>

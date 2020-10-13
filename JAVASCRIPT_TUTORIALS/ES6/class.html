@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Class </title>
+</head>
+<body>
+        <script type="text/javascript">
+
+            class User{
+
+                constructor(username , email ,password){
+                    this.username = username;
+                    this.email = email;
+                    this.password = password;
+
+                }
+
+                static  countUser(){
+                    document.write("There are 50 users ");
+                }
+
+                register(){
+                    document.write(`${this.username} is now registered`);
+                }
+            }
+
+
+            let bob = new User('bob' , 'bob@gmail.com' , '12345');
+            bob.register();
+
+            // use of static method
+
+            User.countUser();
+
+
+        </script>
+
+
+</body>
+</html>

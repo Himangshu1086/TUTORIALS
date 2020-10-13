@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+//============without arrow function=============
+
+function Prefixer(prefix){
+    this.prefix = prefix;
+}
+
+Prefixer.prototype.prefixArray = function(arr){
+
+    let that = this; // if not written gives an error
+    return arr.map(function(x){
+        console.log(that.prefix +  x);
+    });
+}
+
+let pre  = new  Prefixer('Hello');
+pre.prefixArray(['Brad' , 'Jeff']);
+
+
+//============with arrow function=============
+
+// to get the output comment out the above code
+
+function Prefixer(prefix){
+    this.prefix = prefix;
+}
+
+Prefixer.prototype.prefixArray = function(arr){
+
+   // let that = this;  this line is not required
+    return arr.map((x) => {
+        console.log(this.prefix +  x);
+    });
+}
+
+let pre  = new  Prefixer('Hello');
+pre.prefixArray(['Brad' , 'Jeff']);
+
+
+//===================arrow function=============
+
+// to see the  output comment out the above
+
+let add = (a,b) => {
+
+    let sum = a+b;
+    console.log(sum);
+    return false;
+}
+
+add(6,8);
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+        function greet(greeting = ' Hello World '){
+            
+            document.write(greeting);
+        }
+
+        greet();  // here the default parameter is used Hello world ;
+
+
+        //======================================
+
+        //spread operator
+
+        let args = [1 ,2 ,3];
+        let args1 = [1,2,3,4];
+        let args2 = [5,6,7];
+
+        function test(){
+            document.write(args);
+        }
+
+        // test.apply(null , args)
+
+        test( ...args);    // spread operator syntax : ...parameter;
+        
+        function printNumber(){
+
+            document.write(`${args1} ${args2}`);
+        }
+
+        printNumber(...args1 , ...args2);
+
+    </script>
+
+</body>
+</html>
