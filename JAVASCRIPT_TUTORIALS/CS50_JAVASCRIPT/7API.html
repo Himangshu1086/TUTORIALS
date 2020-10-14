@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency Exchange</title>
+
+    <script>
+
+        /*
+            javascript is going to make a web request in order to
+            get access to additional data.
+
+            So far i javascript our javascript code hav exclusively
+            been running code that exist only on our computer.Its running
+            inside the web browser and all happening inside the web browser.
+            We are not communicating to some external service.
+
+            What we look at now something known as 'Ajax' which is about 
+            asynchronous Javascript , where the idea is even after a page has
+            loaded , using javascript , we can mae additional web request to 
+            asked for additional information,either from our own web servers or 
+            from some third-party web servers.
+
+        */
+
+
+        document.addEventListener('DOMContentLoaded' , function(){
+
+            /*
+            FETCH IS GOING TO MAKE A WEB REQUEST.it could be our own or someone
+            else's .AND its going to get back some HTTP response from that page.
+             
+            and what fetch gives back to us something in Javascript known as
+            Promise.
+
+            A promise is going to be a way of representing the idea that something
+            is going to come back , but it may not come back immediately.
+
+            .then ==> it says what should i do when the promise comes back,once i get back
+            something like a response.
+
+            */
+
+            fetch('https://api.ratesapi.io/api/latest')
+            
+            /*  one way
+
+                .then(response => response.json);
+
+
+            */
+            
+                // the other way
+                
+            .then(response => {
+                return response.json();
+
+            })
+            .then(data => {
+                const rate = data.rates.INR;
+                document.querySelector('body').innerHTML = `1 EUR is equal to  ${rate.toFixed(2)} INR `;
+
+                // toFixed ==> it care about decimal point .here up to 2 decimal place.
+            })
+        })
+
+    </script>
+
+
+</head>
+<body>
+    
+
+</body>
+</html>
+
+

@@ -1,0 +1,29 @@
+
+
+     localStorage
+    --------------
+
+1.) localStorage.getItem(key)
+
+   { 
+       when we would like to get something out of localStorage
+    based on its key--some name that we have given to that value. 
+    }
+
+2.)localStorage.setItem(key , value)
+
+    {
+        this is used tp go ahead and adds a new value to localStorage or replace
+    an existing value in localStorage setting the key equal t a particular
+    value.
+    }
+
+
+    So we can use localStorage then to allow our web pages , using javascript
+    t able to store information and retrieve information from the browser.
+
+
+    TIME FUNCTION
+    --------------
+
+    

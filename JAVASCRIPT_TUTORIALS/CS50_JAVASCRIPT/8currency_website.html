@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded' , function(){
+
+            document.querySelector('form').onsubmit = function(){
+
+                fetch('https://api.ratesapi.io/api/latest')
+                .then(response => {
+                    return response.json();
+
+            })
+            
+            .then(data => {
+                
+                const currency = document.querySelector('#currency').value.toUpperCase();
+                const rate = data.rates[currency];
+                if(rate !== undefined){
+                        document.querySelector('#result').innerHTML = `1 EUR IS EQUAL TO ${rate.toFixed(2)} ${currency}`;
+                    }
+                else
+                {
+                    document.querySelector('#result').innerHTML = 'invalid currency';
+                }
+            
+
+            
+
+            }).catch(error => {
+
+                console.log('Error :', error);
+                });
+
+            /*
+                catch case basically says what should you do if something
+                goes wrong.
+                So i can say catch the error .And what i can just do is say like
+                console.log error and then log the error there.
+
+                And all thats really saying is that if anything above
+                goes wrong with fetching and trying to process the response,
+                its gonna catch the error and then it will just print out to the console.
+            */
+
+
+                return false;   // i don't want to submit the form in the server only display in the web.
+                
+        }
+        })
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <form>
+        <input id="currency" placeholder="Currency" type="text">
+        <input type="submit" value="Convert">
+    </form>
+    <div id="result">
+
+    </div>
+</body>
+</html>

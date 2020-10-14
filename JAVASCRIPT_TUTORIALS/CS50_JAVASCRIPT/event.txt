@@ -1,0 +1,14 @@
+1.) there are many events  in javascript  :
+
+ onclick
+ onmouseover
+ onmouseout
+ onkeydown
+ onkeyup
+ onload
+ onblur
+
+
+----------------------------------------------
+
+
