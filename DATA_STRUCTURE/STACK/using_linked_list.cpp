@@ -61,6 +61,27 @@ Node* popFront(Node* head)
 }
 
 
+//===================isEmpty===========================================
+
+
+bool is_Empty(Node* head){
+
+    if(head->next == NULL)
+    {
+        cout << "Stack is Empty" <<endl;
+        return true;
+    }
+    else
+    {
+        
+        cout << "Stack is not Empty" << endl;
+        return  false;
+        
+    }
+    
+}
+
+
 
 //====================printLinkedList=================================
 
@@ -80,8 +101,13 @@ void printLinkedList(Node* head){
 
 int main(){
 
-   Node* head = new Node();
-   head->next =NULL;
+   Node* head = new Node(); 
+    head->next =NULL;
+   
+   /* another way ::      Node* head;
+                          head->next = NULL;      
+    */
+  
 
 
    head =pushFront(head , 10);
@@ -90,6 +116,7 @@ int main(){
    head = pushFront(head , 40);
    head = pushFront(head , 50);
    head = popFront(head);
+   is_Empty(head);
 
    for(int i=0; i<5;i++)
    {    int x;
