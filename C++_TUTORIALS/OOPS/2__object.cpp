@@ -1,3 +1,11 @@
+
+/*
+
+Object is an instance of a class. All the members of the 
+class can be accessed through object.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -28,6 +36,15 @@ public:
 		return std;
 
 	}
+    void insert(int age, string name)    
+    {    
+        age = age;    
+        name = name;    
+    }  
+     void display()    
+        {    
+            cout<<age<<"  "<<name<<endl;    
+        }   
 
 };
 
@@ -39,6 +56,8 @@ int main() {
 	s1.setName("himangshu");
 	s1.setAge(18);
 	s1.setstd(12);
+    s1.insert(34 , "Dercy");
+    s1.display();
 	cout << s1.getName() << " " << s1.getAge() << " " << s1.getStd() << endl;
 
 }

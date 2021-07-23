@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 class StankFist {
 
 public:
@@ -14,6 +15,8 @@ private:
 
 	friend void StankFriend(StankFist &sfo);
 };
+
+
 
 void StankFriend(StankFist &sfo)
 {

@@ -1,10 +1,18 @@
 /*
+/*
+
+A destructor works opposite to constructor; 
+it destructs the objects of classes. 
+It can be defined only once in a class. 
+Like constructors, it is invoked automatically.
+
+
 	** DESTRUCTOR CANNOT RETURN A VALUE AND
 	   CANNOT ACCEPT A PARAMETER.
 
 	** DESTRUCTOR MUST HAVE THE SAME NAME AS THE CONSTRUCTOR;
 
-	DECLARING A DESTRUCTOR :
+	DECLARING A DESTRUCTOR :;
 
 	~CLASSNAME(){
 		task to be complete before going out of scope.
