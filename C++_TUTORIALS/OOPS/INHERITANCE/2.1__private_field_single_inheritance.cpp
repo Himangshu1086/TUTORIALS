@@ -5,8 +5,9 @@ using namespace std;
 
 class A  
 {  
-    int a = 4;  
-    int b = 5;  
+    protected:
+        int a = 4;  
+        int b = 5;  
     public:  
     int mul()  
     {  
@@ -16,7 +17,7 @@ class A
 }; 
 
   
-class B : private A  
+class B : public A  
 {  
     public:  
     void display()  

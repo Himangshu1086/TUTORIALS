@@ -1,6 +1,7 @@
 # C++ Polymorphism
 
 - The term "Polymorphism" is the combination of "poly" + "morphs" which means many forms.
+Polymorphism in C++ means, the same entity (function or object) behaves differently in different scenarios
 
 <br>
 
@@ -44,4 +45,33 @@
         }  
         };  
 
+In the above case, the prototype of display() function is the same in both the base and derived class. Therefore, the static binding cannot be applied. It would be great if the appropriate function is selected at the run time. This is known as run time polymorphism.
 
+<br>
+<br>
+
+## Run Time Polymorphism :
+
+- Run time polymorphism is achieved when the object's method is invoked at the run time instead of compile time. 
+
+- It is achieved by method overriding which is also known as dynamic binding or late binding.
+
+<br><br><br>
+
+![image](diff_betw_run_and_compile.png)
+
+
+<br>
+<br>
+
+
+function overloading and method hiding 
+
+function overloading --- is compile time 
+method hiding -- run time 
+ 
+both have same property like same name but different argument or parameter.
+
+### only difference is that overloading is applicable only when both the method are in the same class
+
+### when the method are from different class i.e inherited method hiding is applied.

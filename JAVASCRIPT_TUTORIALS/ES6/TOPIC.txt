@@ -1,0 +1,17 @@
+1.)  Let and const 
+
+2.) Templete Strings 
+
+3.) Arrow function
+
+4.) Destructuring 
+
+5.) Object Props
+
+6.) Default Arguments 
+
+7.) Arrays in ES6
+
+8.) New No. methods
+
+9.) New Global Methods

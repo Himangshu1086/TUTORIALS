@@ -1,4 +1,11 @@
 /*
+WHAT IS OOPS ?
+Object Oriented programming (OOP) is a programming paradigm that 
+relies on the concept of classes and objects. 
+It is used to structure a software program into simple, 
+reusable pieces of code blueprints (usually called classes),
+
+
 WHAT IS INSTANCE IN C++ ?
 Sol = An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
 

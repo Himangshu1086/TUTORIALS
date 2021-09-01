@@ -47,6 +47,7 @@ int main()
 {
 
    C c;  
+   c.a = 12;  // inaccessible
     c.get_a(10);  
    c.get_b(20);  
    c.display();  

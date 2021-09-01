@@ -43,10 +43,10 @@ class Employee
         int id;    
         string name;    
         Employee(int id, string name, Address* address)    
-       {    
+       {
            this->id = id;    
            this->name = name;    
-           this->address = address;    
+           this->address = address;
        }    
      void display()    
        {    
