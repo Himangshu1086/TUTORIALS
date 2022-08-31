@@ -145,9 +145,9 @@ void MinHeap::MinHeapify(int i)
 	int l = left(i);
 	int r = right(i);
 	int smallest = i;
-	if (l < floor(heap_size/2) && harr[l] < harr[i])
+	if (l <heap_size && harr[l] < harr[i])
 		smallest = l;
-	if (r < floor(heap_size/2) && harr[r] < harr[smallest])
+	if (r < heap_size && harr[r] < harr[smallest])
 		smallest = r;
 	if (smallest != i)
 	{
