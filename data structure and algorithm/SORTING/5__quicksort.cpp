@@ -3,7 +3,7 @@
 The basic idea is to make the left array smaller than the pivot and right array greater than the pivot. 
 Take the first element as the pivot 
 loop from left-> right and find a element which is larger than the pivot (i)
-similar loop rom right->left and find a element which is smaller than the pivot.(j)
+similar loop from right->left and find a element which is smaller than the pivot.(j)
 than swap (i ,j )
 Repeat this till l<r
 After that swap(pivot , arr[j])
@@ -16,7 +16,7 @@ p
 4 6 2 5 7 9 1 3
 
   i			  j
-4 1 2 5 7 9 1 6   ===> swap(arr[i] , arr[j])
+4 3 2 5 7 9 1 6   ===> swap(arr[i] , arr[j])
 
   	  i		j
 4 3 2 5 7 9 1 6
